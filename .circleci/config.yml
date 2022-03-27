@@ -16,3 +16,8 @@ jobs:
           - checkout
           - run: npm install
           - run: npm start
+workflows:
+  version: 2
+  npm_workflow: # this is the name of our workflow
+    jobs: # and here we list the jobs we are going to run.
+      - build
