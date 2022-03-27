@@ -7,11 +7,11 @@ orbs:
   docker: circleci/docker@1.7.0
 
 jobs:
-  example-job:
+  build:
     docker:
       # replace with your preferred image
       - image: cimg/base:stable
-    working_directory: ~/project
+    working_directory: ~/repo
     steps:
           - checkout
           - run: npm install
